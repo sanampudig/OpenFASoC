@@ -57,6 +57,9 @@ SLC cell, containing the Split-Control Level Converter.
 Generator Flow
 --------------
 
+<img width="1166" alt="image" src="https://user-images.githubusercontent.com/110079648/199422742-862fbfcb-09ae-49da-b3c8-232d99096c37.png">
+
+
 To configure circuit specifications, modify the [test.json](https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/test.json) : specfile in the generators/temp-sense-gen/ folder.
 
 To run the default generator, ``cd`` into [openfasoc/generators/temp-sense-gen/](https://github.com/idea-fasoc/OpenFASOC/tree/main/openfasoc/generators/temp-sense-gen) :and execute the following command:
@@ -67,11 +70,11 @@ To run the default generator, ``cd`` into [openfasoc/generators/temp-sense-gen/]
 
 ```
 
-<img width="722" alt="Screenshot 2022-11-02 at 10 38 32 AM" src="https://user-images.githubusercontent.com/110079631/199403946-b3878cfe-c8ca-48b0-aac2-fea51340a56d.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/110079648/199423159-4c68fd4d-4562-4e9f-a686-7d9f3b3dc721.png">
 
 Initially the workspace is cleaned before the flow starts:
 
-<img width="718" alt="Screenshot 2022-11-02 at 10 38 48 AM" src="https://user-images.githubusercontent.com/110079631/199404067-67245698-3411-425b-981b-64e63f8a7224.png">
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/110079648/199423323-49d1657d-f26a-4e12-b6d0-7a8c290d0f98.png">
 
   For other generator options, use `make help`.
 
@@ -87,7 +90,7 @@ Verilog generation
 Running ``make sky130hd_temp`` (temp for "temperature sensor") executes the [temp-sense-gen.py](https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/tools/temp-sense-gen.py) script from temp-sense-gen/tools/. 
 This file takes the input specifications from [test.json](https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/test.json) and outputs Verilog files containing the description of the circuit.
 
-<img width="725" alt="Screenshot 2022-11-02 at 10 39 11 AM" src="https://user-images.githubusercontent.com/110079631/199404163-53175bd6-0070-4c92-af11-7540c8a3eacc.png">
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/110079648/199423457-4a63b0d8-dcf9-4343-8cab-8a6f22679fde.png">
 
  **Note:**
     - temp-sense-gen.py calls other modules from temp-sense-gen/tools/ during execution. For example, [readparamgen.py](https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/tools/readparamgen.py) is in charge of reading test.json, checking for correct user input and choosing the correct circuit elements.
@@ -164,7 +167,7 @@ The OpenROAD Flow starts with a flow configuration file [config.mk](https://gith
 
 The synthesis is run using Yosys to find the appropriate circuit implementation from the available cells in the platform.
 
-<img width="722" alt="Screenshot 2022-11-02 at 10 39 22 AM" src="https://user-images.githubusercontent.com/110079631/199404334-e25352cd-5913-45a7-9d5c-494d25c7d29b.png">
+<img width="706" alt="image" src="https://user-images.githubusercontent.com/110079648/199423807-1f9df90c-a1c5-4b32-b434-97272e46f80b.png">
 
 
 Floorplan
@@ -175,8 +178,9 @@ Then, the floorplan for the physical design is generated with OpenROAD, which re
 
 The floorplan final power report is shown below:
 
-<img width="721" alt="Screenshot 2022-11-02 at 10 40 05 AM" src="https://user-images.githubusercontent.com/110079631/199404465-00b2cfbf-a976-4e8c-bbbc-b79bc1793535.png">
+<img width="716" alt="image" src="https://user-images.githubusercontent.com/110079648/199423951-9652d93a-1d90-4fef-8c76-421ae5ef07e8.png">
 
+<img width="714" alt="image" src="https://user-images.githubusercontent.com/110079648/199424007-e5261b5a-e027-4698-b2b0-f16c49bcbf3e.png">
 
 This temperature sensor design implements two voltage domains: one for the VDD that powers most of the circuit, and another for the VIN that powers the ring oscillator and is an output of the HEADER cells. Such voltage domains are created within the [floorplan.tcl](https://github.com/idea-fasoc/OpenFASOC/blob/main/openfasoc/generators/temp-sense-gen/flow/scripts/floorplan.tcl#L34) script, with the following lines of code:
 
@@ -212,11 +216,11 @@ Placement *takes place* after the floorplan is ready and has two phases: global 
 
 The Global Placement power report is shown below:
 
-<img width="723" alt="Screenshot 2022-11-02 at 10 40 49 AM" src="https://user-images.githubusercontent.com/110079631/199404631-8e390de7-cdba-458b-b525-16c2fe492724.png">
+<img width="708" alt="image" src="https://user-images.githubusercontent.com/110079648/199424273-9e0c11cd-8493-4ac2-b8a8-b9139784b039.png">
 
 The Detail Placement power report is shown below:
 
-<img width="722" alt="Screenshot 2022-11-02 at 10 41 10 AM" src="https://user-images.githubusercontent.com/110079631/199404714-e153f378-a436-4557-80f5-c242560305fe.png">
+
 
 
 Routing
