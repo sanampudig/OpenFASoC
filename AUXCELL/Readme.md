@@ -99,14 +99,19 @@ schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/
 #### Generated .lef and .gds files for example (using Sky130pdk)
 
 - TELESCOPIC_OTA .gds 
+
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/110079648/199897266-907a73cb-c35c-48dc-ad33-b6a0152f9829.png">
+
 - TELESCOPIC_OTA .lef
+
 <img width="751" alt="image" src="https://user-images.githubusercontent.com/110079648/199896853-aa5db834-c94f-4415-bb24-0aedf826bf41.png">
 
 -FIVE_TRANSISTOR_OTA .gds
+
 <img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/199897042-c22c79a4-aecd-4091-acdb-798dbd229e57.png">
 
 -FIVE_TRANSISTOR_OTA .lef
+
 <img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/199897231-8e85a4ab-67a6-4482-bca6-98121c485561.png">
 
 EXAMPLES of
@@ -118,9 +123,13 @@ A simple SPICE Netlist for inverter is written to generate .lef and .gds files
 
 ```
 - .gds
+
+
 <img width="857" alt="image" src="https://user-images.githubusercontent.com/110079648/199897719-b3037219-6157-4331-b9f7-80edf3a226dd.png">
 
 - .lef
+
+
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/110079648/199897814-4ac68600-abc6-4ca1-88bb-092bf7098d0f.png">
 
 # Contribuers
@@ -128,6 +137,7 @@ A simple SPICE Netlist for inverter is written to generate .lef and .gds files
 -  GANDI AJAY KUMAR, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  GOGIREDDY RAVI KIRAN REDDY, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  KUNAL GHOSH, Director, VSD Corp. Pvt. Ltd
+
 # Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
