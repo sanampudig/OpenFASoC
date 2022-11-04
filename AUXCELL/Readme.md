@@ -133,13 +133,17 @@ Running design
 
 <img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/199897231-8e85a4ab-67a6-4482-bca6-98121c485561.png">
 
-EXAMPLES of
+
 ## RUNNING ALIGN FOR input user SPICE Netlist
 
 A simple SPICE Netlist for inverter is written to generate .lef and .gds files
 
 ```
-
+.subckt inverter vinn voutn vdd 0
+m1 voutn vinn vdd vdd pmos_rvt w=840e-9 l=150e-9 nf=2
+m2 voutn vinn 0 0 nmos_rvt w=840e-9 l=150e-9 nf=2
+.ends inverter
+** End of subcircuit definition.
 ```
 - .gds
 
