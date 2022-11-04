@@ -107,7 +107,7 @@ schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/
 
 - TELESCOPIC_OTA .lef
 
-<img width="751" alt="image" src="https://user-images.githubusercontent.com/110079648/199896853-aa5db834-c94f-4415-bb24-0aedf826bf41.png">
+<img width="729" alt="image" src="https://user-images.githubusercontent.com/110079648/199928376-ea9d82d4-e14a-4f2f-acca-f6ddd12dbbd6.png">
 
 -FIVE_TRANSISTOR_OTA .gds
 
