@@ -136,10 +136,10 @@ A simple SPICE Netlist for inverter is written to generate .lef and .gds files
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/110079648/199897814-4ac68600-abc6-4ca1-88bb-092bf7098d0f.png">
 
 # Contribuers
--  SANAMPUDI GOPALA KRISHNA REDDY, Postgraduate Student, International Institute of Information Technology, Bangalore
--  GANDI AJAY KUMAR, Postgraduate Student, International Institute of Information Technology, Bangalore
--  GOGIREDDY RAVI KIRAN REDDY, Postgraduate Student, International Institute of Information Technology, Bangalore
--  KUNAL GHOSH, Director, VSD Corp. Pvt. Ltd
+-  *SANAMPUDI GOPALA KRISHNA REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *GANDI AJAY KUMAR*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *GOGIREDDY RAVI KIRAN REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *KUNAL GHOSH*, Director, VSD Corp. Pvt. Ltd
 
 # Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
