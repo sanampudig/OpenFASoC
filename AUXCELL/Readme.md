@@ -5,6 +5,9 @@
 
 **Discription** : In Open FASoC Flow to generate a automated Analog design few auxilaury cells are required to be created which cannot me implemented with existing library cells (like Header and SLC in temp_sence_gen).
 
+<img width="285" alt="image" src="https://user-images.githubusercontent.com/110079648/199926204-bcb62999-de84-437b-b318-967db250c25e.png">
+
+
 ### Reduired inputs from previous step of flow:
  - SCHEMATIC and SPECIFICATIONS of AUX cell to be generated.
 (usually AUX cell contains lessthan 10 transistors)
