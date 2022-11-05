@@ -155,6 +155,32 @@ m2 voutn vinn 0 0 nmos_rvt w=840e-9 l=150e-9 nf=2
 
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/110079648/199897814-4ac68600-abc6-4ca1-88bb-092bf7098d0f.png">
 
+#### USER EXAMPLE 2
+
+
+![IMAGE 2022-11-05 14:15:13](https://user-images.githubusercontent.com/110079648/200111553-23bbe1ba-7bfe-4aad-9613-06f60cc7a797.jpg)
+
+- Writing netlist from circuit
+```
+.subckt switch dig_in in_1 in_2 Vout N001
+M1 in_1 dig_in Vout Vout nmos_rvt L=180n W=420n nf=2
+M2 Vout N002 in_2 in_2 nmos_rvt L=180n W=420n nf=2
+M4 N002 dig_in 0 0 nmos_rvt L=180n W =420n nf=2
+M5 N002 dig_in N001 N001 pmos_rvt L=180n W=420n nf=2
+M6 in_2 dig_in Vout Vout pmos_rvt L=180n W=420n nf=2
+M3 Vout N002 in_1 in_1 pmos_rvt L=180n W=420n nf=2
+.ends switch
+```
+- .gds file
+
+<img width="728" alt="image" src="https://user-images.githubusercontent.com/110079648/200111690-75c0ed6c-d4fa-447e-be9a-163e75659ac3.png">
+
+- .lef file
+
+<img width="799" alt="image" src="https://user-images.githubusercontent.com/110079648/200111738-1560bd25-79d3-499c-b751-52f698d74aa9.png">
+
+
+
 # AUTHORS
 -  *SANAMPUDI GOPALA KRISHNA REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  *GANDI AJAY KUMAR*, Postgraduate Student, International Institute of Information Technology, Bangalore
