@@ -3,7 +3,7 @@
 
 ## GENERATING .lef, .gds for Aux cells
 
-**Discription** : In Open FASoC Flow to generate a automated Analog design, few auxilaury cells are required to be created which cannot be implemented with existing library cells (like Header and SLC in temp_sence_gen).
+**Discription** : In Open FASoC Flow to generate a automated Analog design, few auxilaury cells(.lef,.gds) are required to be created which cannot be implemented with existing library cells (like Header and SLC in temp_sence_gen). To generate these .lef and .gds files of AUX cells we use ALIGN.
 
 <img width="285" alt="image" src="https://user-images.githubusercontent.com/110079648/199926204-bcb62999-de84-437b-b318-967db250c25e.png">
 
