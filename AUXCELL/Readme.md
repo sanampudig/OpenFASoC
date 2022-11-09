@@ -10,7 +10,7 @@
 
 ### Reduired inputs from previous step of flow:
  - SCHEMATIC and SPECIFICATIONS of AUX cell to be generated.
-(usually AUX cell contains lessthan 10 transistors)
+(usually AUX cell contains less than 12 transistors)
 
 ### First Step 
 
