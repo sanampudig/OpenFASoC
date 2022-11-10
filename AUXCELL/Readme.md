@@ -179,6 +179,21 @@ M3 Vout N002 in_1 in_1 pmos_rvt L=180n W=420n nf=2
 
 <img width="799" alt="image" src="https://user-images.githubusercontent.com/110079648/200111738-1560bd25-79d3-499c-b751-52f698d74aa9.png">
 
+# DESIGNING AUX CELLS FOR PLL
+Source Repo for SPICE FILES - https://github.com/lakshmi-sathi/avsdpll_1v8
+
+## 1 Charge Pump 
+
+### Circuit:
+
+![CP](https://user-images.githubusercontent.com/110079648/201048674-4052a8b5-e5a2-4ce2-ba25-bcc11d337d27.jpg)
+
+```
+
+```
+### .GDS
+
+### .LEF
 
 
 # AUTHORS
