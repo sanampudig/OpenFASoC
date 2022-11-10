@@ -182,7 +182,7 @@ M3 Vout N002 in_1 in_1 pmos_rvt L=180n W=420n nf=2
 # DESIGNING AUX CELLS FOR PLL
 Source Repo for SPICE FILES - https://github.com/lakshmi-sathi/avsdpll_1v8
 
-## 1 Charge Pump 
+## 1 - Charge Pump 
 
 ### Circuit:
 
