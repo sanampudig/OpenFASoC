@@ -189,11 +189,43 @@ Source Repo for SPICE FILES - https://github.com/lakshmi-sathi/avsdpll_1v8
 ![CP](https://user-images.githubusercontent.com/110079648/201048674-4052a8b5-e5a2-4ce2-ba25-bcc11d337d27.jpg)
 
 ```
+.subckt cp downb in_3 in_2 out up upb VDD
 
+m1 in_2 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+
+m2 in_3 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+
+m3 out downb in_3 in_3 sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=4
+ 
+m4 out up 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+m5 7 8 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+m6 8 8 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+m7 9 down in_3 in_3 sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m8 9 9 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+m11 upb up VDD VDD sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+
+m12 upb up VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m13 dnb dn VDD VDD sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+
+m14 dnb dn VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+m9 10 10 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+
+m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+
+.ends cp
 ```
 ### .GDS
 
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/110079648/201051273-33cdf936-027e-437c-a3da-6c4ca80ca066.png">
+
 ### .LEF
+
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/110079648/201051563-9baf117c-005d-45be-b97b-781c22fd5f57.png">
 
 
 # AUTHORS
