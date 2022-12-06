@@ -40,8 +40,8 @@ Placement and routing performs block assembly of the hierarchical blocks in the 
 Use the following commands to install ALIGN tool.
 
 ```
-export CC=/path/to/your/gcc
-export CXX=/path/to/your/g++
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
 git clone https://github.com/ALIGN-analoglayout/ALIGN-public
 cd ALIGN-public
 
