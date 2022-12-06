@@ -238,7 +238,8 @@ m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
 
 # Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
-
+- Madhav Rao, Associate Professor, IIIT Bangalore.
+- Nanditha Rao, Assistant Professor, IIIT Bangalore.
 	
 
 
