@@ -229,7 +229,7 @@ m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
 
 
 # AUTHORS
--  *SANAMPUDI GOPALA KRISHNA REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *SANAMPUDI GOPALA KRISHNA REDDY MT2022527*, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  *GANDI AJAY KUMAR*, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  *GOGIREDDY RAVI KIRAN REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
 # Contributers
