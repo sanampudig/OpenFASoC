@@ -234,7 +234,7 @@ m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
 -  *GOGIREDDY RAVI KIRAN REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
 # Contributers
 -  *KUNAL GHOSH*, Director, VSD Corp. Pvt. Ltd
--  *DR VASANTHI*, PhD, International Institute of Information Technology, Bangalore
+
 
 # Acknowledgments
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
