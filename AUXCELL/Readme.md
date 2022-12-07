@@ -367,7 +367,7 @@ Then type `magic` in terminal which open magic.
 
 <img width="403" alt="image" src="https://user-images.githubusercontent.com/110079648/206182472-3fb5c83f-8613-42a2-ad3b-1992653f56db.png">
 
-Place the curser outside layout press `s` which select entire layout.
+- Place the curser outside layout press `s` which select entire layout.
 Then goto tkcon and type `ext2spice`
 
 <img width="278" alt="image" src="https://user-images.githubusercontent.com/110079648/206182880-d5c8aa21-23d4-43cf-8c38-248dd11d5e64.png">
