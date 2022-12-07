@@ -17,7 +17,8 @@ Aux Cells are part of big analog design which cannot be implemented with exisiti
 We are using ALIGN TOOL - More at: https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL
 ---------------------------------------------------------------------------------------------
 
-- Video Links:
+- Video Links: https://www.youtube.com/watch?v=seJzVtQYT8Q
+                
 
 ----------------------------------------------------------------------------------------------
 PLL Flow : https://github.com/sanampudig/OpenFASoC/tree/main/PLL-gen
