@@ -348,6 +348,36 @@ xm22 out 11 VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=420n
 
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/110079648/206168558-88c2f766-1b2e-48b0-9173-baa140b6bdd4.png">
 
+# POST LAYOUT SIMULATIONS
+Magic Tool is used to post layout Spice file. SPICE file can be simulated in NGSPICE and compare with prelayout.
+
+- Open terminal in work directory where our final gds stored.
+
+set PDK ROOT for Magic using the command -
+```
+export PDK_ROOT=/path/to/your/pdks/
+# I have used pdks Sky130 pdks from openlane
+```
+
+Then type `magic` in terminal which open magic.
+
+<img width="709" alt="image" src="https://user-images.githubusercontent.com/110079648/206182263-18c830ac-5983-4ffb-8e6b-eb39a8f6db1e.png">
+
+- Then goto file and press read GDS and select our gds file
+
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/110079648/206182472-3fb5c83f-8613-42a2-ad3b-1992653f56db.png">
+
+Place the curser outside layout press `s` which select entire layout.
+Then goto tkcon and type `ext2spice`
+
+<img width="278" alt="image" src="https://user-images.githubusercontent.com/110079648/206182880-d5c8aa21-23d4-43cf-8c38-248dd11d5e64.png">
+
+- post layout spice file is created in work directory
+
+<img width="1108" alt="image" src="https://user-images.githubusercontent.com/110079648/206183100-12dc9b4a-0baa-4b48-a233-ff3c780942ea.png">
+
+
+
 # FUTURE WORK:
 POST LAYOUT SIMULATIONS ARE NOT EXACTLY MATCHING. HAVE TO DEBUG AT EVERY TRANSISTOR AND IDENTFY WHERE IT IS FAILING
 # AUTHORS
