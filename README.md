@@ -1,9 +1,6 @@
 # OpenFASoC - Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits
 
 <img width="854" alt="image" src="https://user-images.githubusercontent.com/110079648/206190831-59d779fe-d3c1-4f19-907d-cf8ec00ea08a.png">
-
-
-
 OpenFASoC is a project focused on automated analog generation from user specification to GDSII with fully open-sourced tools. It is led by a team of researchers at the University of Michigan and is inspired from FASoC which sits on proprietary software.
 
 More About FASoC: https://fasoc.engin.umich.edu/
@@ -22,9 +19,9 @@ We are using ALIGN TOOL - More at: https://github.com/sanampudig/OpenFASoC/tree/
 
  ![yt](https://user-images.githubusercontent.com/110079648/206188702-e7d01df5-84e7-4ba7-9ccf-54ecff743a26.png)
 
-### VideoLinks: https://www.youtube.com/watch?v=seJzVtQYT8Q
-
-                
+### VideoLinks:
+https://www.youtube.com/watch?v=seJzVtQYT8Q
+https://www.youtube.com/watch?v=ESJPxFDi8XI
 
 ----------------------------------------------------------------------------------------------
 PLL Flow : https://github.com/sanampudig/OpenFASoC/tree/main/PLL-gen
