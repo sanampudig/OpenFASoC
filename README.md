@@ -46,8 +46,6 @@ with courtesy of VINAY RAYAPATI - https://github.com/vinayrayapati/OpenFaSoc/tre
 - Madhav Rao, Associate Professor, IIIT Bangalore.
 - Nanditha Rao, Assistant Professor, IIIT Bangalore.
 
-![IIITB Silver Jubilee Logo](https://user-images.githubusercontent.com/110079648/206175092-b59d55a6-7387-4b08-bcf3-20be4f9cb4c2.png)
 
-<img width="1017" alt="image" src="https://user-images.githubusercontent.com/110079648/206175648-2b18dc51-c2e4-472b-a188-562de9732c01.png">
 
 
