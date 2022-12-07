@@ -18,8 +18,8 @@ We are using ALIGN TOOL - More at: https://github.com/sanampudig/OpenFASoC/tree/
 ---------------------------------------------------------------------------------------------
 
  ![yt](https://user-images.githubusercontent.com/110079648/206188702-e7d01df5-84e7-4ba7-9ccf-54ecff743a26.png)
-VideoLinks:
-https://www.youtube.com/watch?v=seJzVtQYT8Q
+
+### VideoLinks: https://www.youtube.com/watch?v=seJzVtQYT8Q
 
                 
 
