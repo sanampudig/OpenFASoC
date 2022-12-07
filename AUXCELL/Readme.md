@@ -125,11 +125,11 @@ Running design
 
 <img width="729" alt="image" src="https://user-images.githubusercontent.com/110079648/199928376-ea9d82d4-e14a-4f2f-acca-f6ddd12dbbd6.png">
 
--FIVE_TRANSISTOR_OTA .gds
+- FIVE_TRANSISTOR_OTA .gds
 
 <img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/199897042-c22c79a4-aecd-4091-acdb-798dbd229e57.png">
 
--FIVE_TRANSISTOR_OTA .lef
+- FIVE_TRANSISTOR_OTA .lef
 
 <img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/199897231-8e85a4ab-67a6-4482-bca6-98121c485561.png">
 
@@ -262,6 +262,7 @@ xm12 2 vout 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
 ```
 ### .GDS
 <img width="205" alt="image" src="https://user-images.githubusercontent.com/110079648/206166922-10cdd372-0b6b-41e7-a790-7c9eb85d77e3.png">
+
 ### .LEF
 <img width="97" alt="image" src="https://user-images.githubusercontent.com/110079648/206167047-b1ed7642-13dc-4e5a-9365-3ec1ff725809.png">
 
