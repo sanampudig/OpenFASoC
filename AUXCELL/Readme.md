@@ -182,50 +182,174 @@ M3 Vout N002 in_1 in_1 pmos_rvt L=180n W=420n nf=2
 # DESIGNING AUX CELLS FOR PLL
 Source Repo for SPICE FILES - https://github.com/lakshmi-sathi/avsdpll_1v8
 
-## 1 - Charge Pump 
+## 1 - Charge Pump - GOPALA KRISHNA REDDY
 
 ### Circuit:
 
 ![CP](https://user-images.githubusercontent.com/110079648/201048674-4052a8b5-e5a2-4ce2-ba25-bcc11d337d27.jpg)
 
 ```
-.subckt cp downb in_3 in_2 out up upb VDD
+.subckt cp dn out up vdd vss
 
-m1 in_2 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m1 in_2 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=150n W=420n
 
-m2 in_3 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m2 in_3 in_2 vdd vdd sky130_fd_pr__pfet_01v8 L=150n  W=540n
 
-m3 out downb in_3 in_3 sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=4
- 
-m4 out up 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m3 out downb in_3 in_3 sky130_fd_pr__pfet_01v8 L=150n  W=420n
 
-m5 7 8 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m4 out up 7 7 sky130_fd_pr__nfet_01v8 L=150n  W=420n
 
-m6 8 8 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m5 7 8 vss vss sky130_fd_pr__nfet_01v8 L=150n  W=540n
 
-m7 9 down in_3 in_3 sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
-m8 9 9 VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m6 8 8 vss vss sky130_fd_pr__nfet_01v8 L=150n  W=420n
 
-m11 upb up VDD VDD sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m7 9 dn in_3 in_3 sky130_fd_pr__pfet_01v8 L=150n  W=540n
+m8 9 9 vss vss sky130_fd_pr__nfet_01v8 L=150n  W=420n
 
-m12 upb up VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
-m13 dnb dn VDD VDD sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m11 up upb vdd vdd sky130_fd_pr__pfet_01v8 L=150n  W=720n
 
-m14 dnb dn VSS VSS sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m12 up upb vss vss sky130_fd_pr__nfet_01v8 L=150n  W=420n
+m13 dn downb vdd vdd sky130_fd_pr__pfet_01v8 L=150n  W=720n
 
-m9 10 10 vdd vdd sky130_fd_pr__pfet_01v8 L=180n  W=420n nf=2
+m14 dn downb vss vss sky130_fd_pr__nfet_01v8 L=150n  W=420n
 
-m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=180n  W=420n nf=2
+m9 10 10 vdd vdd sky130_fd_pr__pfet_01v8 L=150n  W=420n
+
+m10 10 upb 7 7 sky130_fd_pr__nfet_01v8 L=150n  W=540n
 
 .ends cp
+
 ```
 ### .GDS
 
-<img width="806" alt="image" src="https://user-images.githubusercontent.com/110079648/201051273-33cdf936-027e-437c-a3da-6c4ca80ca066.png">
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/110079648/206165878-cf4a4321-e14b-49ae-b290-4fec42fe62f7.png">
 
 ### .LEF
 
-<img width="802" alt="image" src="https://user-images.githubusercontent.com/110079648/201051563-9baf117c-005d-45be-b97b-781c22fd5f57.png">
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/110079648/206165962-119ae4a0-7a0e-49b7-ab17-887c266b3223.png">
+
+## 2 - FREQUENCY DIVIDER - RAVI KIRAN REDDY
+
+### Circuit:
+
+<img width="477" alt="image" src="https://user-images.githubusercontent.com/110079648/206166559-20968ba3-b5af-4ab5-ae7e-066910dc645a.png">
+
+```
+
+.subckt FD Clk vout Clkb
+
+xm1 3 2 vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=840n
+xm2 3 2 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+xm3 3 Clkb 4 vdd sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm4 3 Clk 4 0 sky130_fd_pr__nfet_01v8 l=150n w=840n
+
+xm7 5 4 vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=840n
+xm8 5 4 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+xm9 5 Clk vout vdd sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm10 5 Clkb vout 0 sky130_fd_pr__nfet_01v8 l=150n w=840n
+
+xm11 2 vout vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=840n
+xm12 2 vout 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+*xm13 Clkb Clk vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=840n
+*xm14 Clkb Clk 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+
+.ends FD
+
+```
+### .GDS
+
+<img width="205" alt="image" src="https://user-images.githubusercontent.com/110079648/206166922-10cdd372-0b6b-41e7-a790-7c9eb85d77e3.png">
+
+
+### .LEF
+
+<img width="97" alt="image" src="https://user-images.githubusercontent.com/110079648/206167047-b1ed7642-13dc-4e5a-9365-3ec1ff725809.png">
+
+## 3 - PHASE DETECTOR - RAVI KIRAN REDDY
+### Circuit:
+
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/110079648/206167477-9d10a1c7-966c-465d-a7d5-919697ca0a94.png">
+
+
+```
+.subckt PD CLKref CLKvco up down vss vdd
+
+xm1 3 CLKref vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=640n
+xm2 3 CLKref 4 vss sky130_fd_pr__nfet_01v8 l=150n w=1800n
+xm3 4 CLKvco vss vss sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+xm4 6 CLKvco vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=640n
+xm5 6 CLKvco 7 vss sky130_fd_pr__nfet_01v8 l=150n w=1800n
+xm6 7 CLKref vss vss sky130_fd_pr__nfet_01v8 l=150n w=420n
+
+xm7 up1 CLKref 3 vss sky130_fd_pr__nfet_01v8 l=150n w=840n
+xm8 clk1 clk1 up1 up1 sky130_fd_pr__pfet_01v8 l=150n w=640n
+xm11 upb up1 vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=720n
+xm12 upb up1 vss vss sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm15 up upb vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=960n
+xm16 up upb vss vss sky130_fd_pr__nfet_01v8 l=150n w=480n
+xm9 dn1 clk2 6 6 sky130_fd_pr__nfet_01v8 l=150n w=840n
+xm10 clk2 clk2 dn1 dn1 sky130_fd_pr__pfet_01v8 l=150n w=640n
+xm13 downb dn1 vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=720n
+xm14 downb dn1 vss vss sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm17 down downb vdd vdd sky130_fd_pr__pfet_01v8 l=150n w=960n
+xm18 down downb vss vss sky130_fd_pr__nfet_01v8 l=150n w=480n
+
+.ends PD
+
+```
+### .GDS
+
+<img width="1066" alt="image" src="https://user-images.githubusercontent.com/110079648/206167617-6398b2ba-2121-45d5-a722-ac98b90a4104.png">
+
+### .LEF
+
+<img width="1069" alt="image" src="https://user-images.githubusercontent.com/110079648/206167892-c6046aea-2805-467e-a135-58f1746c1708.png">
+
+## 4 - VOLTAGE CONTROLLED OSCILLATOR - GANDI AJAY KUMAR
+### Circuit:
+
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/110079648/206168206-0995b027-e6e4-48a2-913a-294f6e441d59.png">
+
+```
+.subckt VCO in out VSS VDD
+.include /home/ajaykumar/Downloads/spicelib/sky130.lib
+xm1 3 16 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm2 3 16 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm3 4 3 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm4 4 3 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm5 vout 4 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm6 vout 4 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm11 13 vout 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm12 13 vout 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm13 14 13 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm14 14 13 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm15 15 14 10 10 sky130_fd_pr__pfet_01v8 l=150n w=420n
+xm16 15 14 9 9 sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm17 16 15 10 10 sky130_fd_pr__pfet_01v8 l=150n w=2400n
+xm18 16 15 9 9 sky130_fd_pr__nfet_01v8 l=150n w=1200n
+xm7 10 5 VDD VDD sky130_fd_pr__pfet_01v8 l=150n w=1080n
+xm8 5 5 VDD VDD sky130_fd_pr__pfet_01v8 l=150n w=1080n
+xm9 5 in VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=840n
+xm10 9 in VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=1080n
+xm19 11 16 VDD VDD sky130_fd_pr__pfet_01v8 l=150n w=720n
+xm20 11 16 VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=420n
+xm21 out 11 VDD VDD sky130_fd_pr__pfet_01v8 l=150n w=720n
+xm22 out 11 VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=420n
+.ends VCO
+
+```
+### .GDS
+
+<img width="416" alt="image" src="https://user-images.githubusercontent.com/110079648/206168470-f440549a-b9f5-4ff4-98bd-f4f21a0e8e33.png">
+
+### .LEF
+
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/110079648/206168558-88c2f766-1b2e-48b0-9173-baa140b6bdd4.png">
 
 
 # AUTHORS
