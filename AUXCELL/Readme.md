@@ -362,5 +362,9 @@ xm22 out 11 VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=420n
 - Madhav Rao, Associate Professor, IIIT Bangalore.
 - Nanditha Rao, Assistant Professor, IIIT Bangalore.
 	
+# REFERENCE 
+
+- Lakshmi S, MS ECE - MAIL: lakshmi.sathi96@gmail.com GITHUB: https://github.com/lakshmi-sathi/avsdpll_1v8
+
 
 
