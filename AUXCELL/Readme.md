@@ -348,7 +348,8 @@ xm22 out 11 VSS VSS sky130_fd_pr__nfet_01v8 l=150n w=420n
 
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/110079648/206168558-88c2f766-1b2e-48b0-9173-baa140b6bdd4.png">
 
-
+# FUTURE WORK:
+POST LAYOUT SIMULATIONS ARE NOT EXACTLY MATCHING. HAVE TO DEBUG AT EVERY TRANSISTOR AND IDENTFY WHERE IT IS FAILING
 # AUTHORS
 -  *SANAMPUDI GOPALA KRISHNA REDDY MT2022527*, Postgraduate Student, International Institute of Information Technology, Bangalore
 -  *GANDI AJAY KUMAR*, Postgraduate Student, International Institute of Information Technology, Bangalore
