@@ -264,7 +264,7 @@ xm12 2 vout 0 0 sky130_fd_pr__nfet_01v8 l=150n w=420n
 <img width="205" alt="image" src="https://user-images.githubusercontent.com/110079648/206166922-10cdd372-0b6b-41e7-a790-7c9eb85d77e3.png">
 
 ### .LEF
-<img width="97" alt="image" src="https://user-images.githubusercontent.com/110079648/206167047-b1ed7642-13dc-4e5a-9365-3ec1ff725809.png">
+<img width="160" alt="image" src="https://user-images.githubusercontent.com/110079648/206169385-e4423db6-95e8-44d3-8862-20f5e9cf55a6.png">
 
 ## 3 - PHASE DETECTOR - RAVI KIRAN REDDY
 ### Circuit:
