@@ -15,6 +15,7 @@ Parent Repo: https://github.com/idea-fasoc/OpenFASOC
 Aux Cells are part of big analog design which cannot be implemented with exisiting standerd cell in library. For different designs we have different aux cells. We have to manually create these.
 
 - We are using ALIGN TOOL for this. More at: https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL
+---------------------------------------------------------------------------------------------
 
 - Video Links:
 
