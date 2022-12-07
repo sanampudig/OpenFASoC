@@ -1,4 +1,4 @@
-# OpenFASoC - Fully Open-Source Autonomous SoC
+# AUX CELL GENERATION FOR - OpenFASoC(Fully Open-Source Autonomous SoC)
 > This Flow Still under development*
 
 ## GENERATING .lef, .gds for Aux cells
