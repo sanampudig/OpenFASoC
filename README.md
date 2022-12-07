@@ -17,4 +17,21 @@ Aux Cells are part of big analog design which cannot be implemented with exisiti
 
 - Video Links:
 
+----------------------------------------------------------------------------------------------
+PLL Flow :
 
+with courtesy of VINAY RAYAPATI - https://github.com/vinayrayapati/OpenFaSoc/tree/main/PLL-gen
+----------------------------------------------------------------------------------------------
+
+# AUTHORS
+-  *SANAMPUDI GOPALA KRISHNA REDDY MT2022527*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *GANDI AJAY KUMAR*, Postgraduate Student, International Institute of Information Technology, Bangalore
+-  *GOGIREDDY RAVI KIRAN REDDY*, Postgraduate Student, International Institute of Information Technology, Bangalore
+# Contributers
+-  *KUNAL GHOSH*, Director, VSD Corp. Pvt. Ltd
+
+
+# Acknowledgments
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Madhav Rao, Associate Professor, IIIT Bangalore.
+- Nanditha Rao, Assistant Professor, IIIT Bangalore.
