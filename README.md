@@ -40,6 +40,6 @@ with courtesy of VINAY RAYAPATI - https://github.com/vinayrayapati/OpenFaSoc/tre
 
 ![IIITB Silver Jubilee Logo](https://user-images.githubusercontent.com/110079648/206175092-b59d55a6-7387-4b08-bcf3-20be4f9cb4c2.png)
 
-![cropped-vsd_logo](https://user-images.githubusercontent.com/110079648/206175140-4adc8f00-d8b7-4545-b80b-186ad1314167.jpeg)
+<img width="523" alt="image" src="https://user-images.githubusercontent.com/110079648/206175357-1fed31ee-d897-4a94-9a92-d89b2c58cf30.png">
 
 
