@@ -54,6 +54,11 @@ SLC cell, containing the Split-Control Level Converter.
 
 <img width="1349" alt="image" src="https://user-images.githubusercontent.com/110079648/199422193-cb334d02-8a9d-44c4-bccb-2d832cb8360f.png">
 
+# Block Diagram
+
+![image](https://user-images.githubusercontent.com/110079648/206176985-f85d2fb8-ff1d-4f3d-b5d4-e0821caa7b1e.png)
+
+
 Generator Flow
 --------------
 
