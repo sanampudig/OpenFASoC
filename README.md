@@ -1,5 +1,11 @@
 # OpenFASoC - Fully Open-Source Autonomous SoC Synthesis using Customizable Cell-Based Synthesizable Analog Circuits
 
+![IIITB Silver Jubilee Logo](https://user-images.githubusercontent.com/110079648/206175092-b59d55a6-7387-4b08-bcf3-20be4f9cb4c2.png)
+
+![cropped-vsd_logo](https://user-images.githubusercontent.com/110079648/206175140-4adc8f00-d8b7-4545-b80b-186ad1314167.jpeg)
+
+
+
 OpenFASoC is a project focused on automated analog generation from user specification to GDSII with fully open-sourced tools. It is led by a team of researchers at the University of Michigan and is inspired from FASoC which sits on proprietary software.
 
 More About FASoC: https://fasoc.engin.umich.edu/
@@ -21,6 +27,7 @@ Aux Cells are part of big analog design which cannot be implemented with exisiti
 PLL Flow :
 
 with courtesy of VINAY RAYAPATI - https://github.com/vinayrayapati/OpenFaSoc/tree/main/PLL-gen
+
 ----------------------------------------------------------------------------------------------
 
 # AUTHORS
