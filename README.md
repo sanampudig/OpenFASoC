@@ -21,6 +21,7 @@ We are using ALIGN TOOL - More at: https://github.com/sanampudig/OpenFASoC/tree/
 
 ### VideoLinks:
 https://www.youtube.com/watch?v=seJzVtQYT8Q
+
 https://www.youtube.com/watch?v=ESJPxFDi8XI
 
 ----------------------------------------------------------------------------------------------
