@@ -20,7 +20,7 @@ We are using ALIGN TOOL - More at: https://github.com/sanampudig/OpenFASoC/tree/
 - Video Links:
 
 ----------------------------------------------------------------------------------------------
-PLL Flow :
+PLL Flow : https://github.com/sanampudig/OpenFASoC/tree/main/PLL-gen
 
 with courtesy of VINAY RAYAPATI - https://github.com/vinayrayapati/OpenFaSoc/tree/main/PLL-gen
 
